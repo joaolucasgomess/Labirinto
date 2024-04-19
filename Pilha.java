@@ -30,4 +30,12 @@ public class Pilha {
    public int[] espiar(){
       return pilha[topo];      
    }
+   
+   public void imprimirPilha(){
+      for(int i = 0; i < this.pilha.length; i++){
+         for(int j = 0; j < this.pilha[i].length; j++){
+            System.out.print(pilha[i][j] + ", ");
+         }System.out.print("->");
+      }
+   }
 }

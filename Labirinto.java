@@ -37,6 +37,11 @@ public class Labirinto {
       }
    }
    
+   public void imprmirCaminho(){
+      System.out.println("Achou o caminho!");
+      pilhaDeCaminhos.imprimirPilha();
+   }
+   
    public int[] buscaInicio(){
       int[] indice = new int[2];
    
@@ -53,13 +58,7 @@ public class Labirinto {
       return indice;
    }
    
-   public void imprmirCaminho(){
-     for(int i = 1; i < this.pilhaDeCaminhos.length; i++){
-         for(int j = 1; j < this.pilhaDeCaminhos[i].length; j++){
-            System.out.print(pilhaDeCaminhos[i], pilhaDeCaminhos[j] + "->");
-         }
-      }System.out.println();
-   }
+   
    
    public void iniciaJornada(){
       int[] indiceInicio = buscaInicio();
